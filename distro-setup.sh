@@ -211,7 +211,6 @@ function Install_Ubuntu_fonts {
 
 function Remove_Unwanted_SW {
     if [[ $distro_family == rpm ]]; then
-        #local UNWANTED_SW='rhythmbox gnome-tour yelp simple-scan'
         Log_Info "Removing unwanted software"
         xargs <<<"${UNWANTED_SW[@]}" sudo dnf remove --assumeyes 2>&1 \
           | grep --invert-match 'No match for'
