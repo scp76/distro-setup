@@ -22,7 +22,7 @@ Shell script to automate setup of applications and configuration on a newly inst
 ## Usage
 
 ```shell
-git clone https://github.com/bashbadger/distro-setup.git /tmp/distro-setup
+git clone https://github.com/scp76/distro-setup.git /tmp/distro-setup
 cd $_
 ./distro-setup.sh
 ```
